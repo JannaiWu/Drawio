@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-29T09:13:18.660Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="biNTFmQBxrl47X8HF-3x" version="16.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-30T02:50:57.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="voTWJqjAszI-zaNfAfWJ" version="16.1.0" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="769" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="585" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -154,13 +154,16 @@
         </mxCell>
         <mxCell id="Wuc6aL7GPIGe7VfJl6uI-40" value="pthread_create(&amp;amp;rnd-&amp;gt;rx_tid, NULL, virtio_rnd_get_entropy,(void *)rnd);" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;exitX=0.5;exitY=0.763;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="Wuc6aL7GPIGe7VfJl6uI-39" parent="1" source="Yw1HEd1iCYnC2zurb09P-3">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="435" y="880" as="sourcePoint" />
+            <mxPoint x="90" y="880" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Wuc6aL7GPIGe7VfJl6uI-41" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" edge="1" source="Wuc6aL7GPIGe7VfJl6uI-39" parent="1" target="Yw1HEd1iCYnC2zurb09P-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="956" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Wuc6aL7GPIGe7VfJl6uI-42" value="Bind function “virtio_rnd_get_entropy” to pthread_t&amp;nbsp; “rx_tid”" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="920" width="370" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
