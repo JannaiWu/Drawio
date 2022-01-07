@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-06T11:55:39.915Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="9RCZQSRZlanr9Je6l1YN" version="16.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T11:25:52.632Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="sZC_ABxfSSly-i_ET8Bf" version="16.2.1" type="github">
   <diagram id="iOxBZn5fvJT5Tx_yMcos" name="第 1 页">
-    <mxGraphModel dx="830" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -274,6 +274,49 @@
               <mxPoint x="718" y="935" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-80" value="iowrite16(index, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_SEL)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="960" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-81" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.097;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770.0400000000001" y="957.4399999999998" as="sourcePoint" />
+            <mxPoint x="792.32" y="992.56" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="782" y="975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-82" value="vq = vring_create_virtqueue(index, num,VIRTIO_PCI_VRING_ALIGN, &amp;amp;vp_dev-&amp;gt;vdev,true, false, ctx,vp_notify, callback, name);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1000" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-84" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0.002;entryY=0.582;entryDx=0;entryDy=0;exitX=0.097;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-82">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="769.9999999999999" y="974.79" as="sourcePoint" />
+            <mxPoint x="808.29" y="1000" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="782" y="1023" />
+              <mxPoint x="821" y="1023" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-85" value="iowrite32(q_pfn, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_PFN)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1180" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-86" value="vring_create_virtqueue_packed/split" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="1060" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-87" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-82" target="IT_VbBreB6Q_WFfWkHAE-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="831.71" y="1060" as="sourcePoint" />
+            <mxPoint x="870" y="1085.21" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="860" y="1075" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-88" value="vring_alloc_queue(vdev, ring_size_in_bytes,&amp;amp;ring_dma_addr," style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1110" width="200" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
