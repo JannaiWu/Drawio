@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T11:25:52.632Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="sZC_ABxfSSly-i_ET8Bf" version="16.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-10T02:22:11.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="A09JHekF8upzzPzO1UaE" version="16.2.2" type="github">
   <diagram id="iOxBZn5fvJT5Tx_yMcos" name="第 1 页">
-    <mxGraphModel dx="1221" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1730" dy="1040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-1" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-4">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-1" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="60" as="sourcePoint" />
             <mxPoint x="150" y="90" as="targetPoint" />
@@ -13,28 +13,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-3" value="virtio_init(void) [drivers/virtio/virtio.c]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-3" value="virtio_init(void) [drivers/virtio/virtio.c]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="40" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-4" value="bus_register(&amp;amp;virtio_bus)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-4" value="bus_register(&amp;amp;virtio_bus)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="80" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="320" y="35" width="30" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-8" value="&lt;div&gt;static struct bus_type virtio_bus = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .name&amp;nbsp; = &quot;virtio&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .match = virtio_dev_match,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .dev_groups = virtio_dev_groups,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .uevent = virtio_uevent,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .probe = virtio_dev_probe,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .remove = virtio_dev_remove,&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-8" value="&lt;div&gt;static struct bus_type virtio_bus = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .name&amp;nbsp; = &quot;virtio&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .match = virtio_dev_match,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .dev_groups = virtio_dev_groups,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .uevent = virtio_uevent,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .probe = virtio_dev_probe,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .remove = virtio_dev_remove,&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="340" y="35" width="220" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-10" value="virtio_dev_probe" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-10" value="virtio_dev_probe" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="160" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-12" value="virtio_dev_match[drivers/virtio/virtio.c]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-12" value="virtio_dev_match[drivers/virtio/virtio.c]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="130" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-13" value="Front end kernel" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-13" value="Front end kernel" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="100" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-16" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-12">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-16" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="45" y="119.97" as="sourcePoint" />
             <mxPoint x="65" y="149.97" as="targetPoint" />
@@ -43,7 +43,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-18" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-10">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-18" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="149.97" as="sourcePoint" />
             <mxPoint x="140" y="179.97" as="targetPoint" />
@@ -52,10 +52,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-19" value="virtio_add_status(dev, VIRTIO_CONFIG_S_DRIVER)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-19" value="virtio_add_status(dev, VIRTIO_CONFIG_S_DRIVER)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="190" width="330" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-26" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-19">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-26" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-19" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="200" y="199.99999999999997" as="sourcePoint" />
             <mxPoint x="240" y="220.03" as="targetPoint" />
@@ -64,10 +64,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-27" value="dev-&amp;gt;config-&amp;gt;set_status(dev, dev-&amp;gt;config-&amp;gt;get_status(dev) | status)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-27" value="dev-&amp;gt;config-&amp;gt;set_status(dev, dev-&amp;gt;config-&amp;gt;get_status(dev) | status)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="220" width="420" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-28" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.126;exitY=1.056;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-19" target="IT_VbBreB6Q_WFfWkHAE-27">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-28" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.126;exitY=1.056;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-19" target="IT_VbBreB6Q_WFfWkHAE-27" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="290" y="230" as="sourcePoint" />
             <mxPoint x="320" y="250" as="targetPoint" />
@@ -76,34 +76,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-29" value="&lt;div&gt;以virtio pci config ops为例&lt;/div&gt;&lt;div&gt;static const struct virtio_config_ops virtio_pci_config_ops = {&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_get,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_set,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_status&amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_get_status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set_status&amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_set_status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .reset&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_reset,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .find_vqs&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_find_vqs,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .del_vqs&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_del_vqs,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_features&amp;nbsp; &amp;nbsp;= vp_get_features,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .finalize_features = vp_finalize_features,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .bus_name&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_bus_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set_vq_affinity = vp_set_vq_affinity,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_vq_affinity = vp_get_vq_affinity,&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-29" value="&lt;div&gt;以virtio pci config ops为例&lt;/div&gt;&lt;div&gt;static const struct virtio_config_ops virtio_pci_config_ops = {&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_get,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_set,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_status&amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_get_status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set_status&amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_set_status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .reset&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_reset,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .find_vqs&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_find_vqs,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .del_vqs&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; = vp_del_vqs,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_features&amp;nbsp; &amp;nbsp;= vp_get_features,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .finalize_features = vp_finalize_features,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .bus_name&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= vp_bus_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .set_vq_affinity = vp_set_vq_affinity,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .get_vq_affinity = vp_get_vq_affinity,&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="770" y="71.25" width="340" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-30" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-30" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="750" y="68.75" width="30" height="202.5" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-31" value="ioread8(vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_STATUS)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-31" value="ioread8(vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_STATUS)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1110" y="110" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-31">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-31" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1040" y="150" as="sourcePoint" />
             <mxPoint x="950" y="90" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-34" value="iowrite8(status, vp_dev-&amp;gt;ioaddr +VIRTIO_PCI_STATUS)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-34" value="iowrite8(status, vp_dev-&amp;gt;ioaddr +VIRTIO_PCI_STATUS)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1110" y="155" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-34">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1040" y="150" as="sourcePoint" />
             <mxPoint x="1130" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-39" value="virtio_finalize_features(dev)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-39" value="virtio_finalize_features(dev)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="261.25" width="160" height="28.75" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-40" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-39">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-40" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-39" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="200" y="251.25" as="sourcePoint" />
             <mxPoint x="230" y="271.25" as="targetPoint" />
@@ -112,10 +112,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-41" value="dev-&amp;gt;config-&amp;gt;finalize_features(dev)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-41" value="dev-&amp;gt;config-&amp;gt;finalize_features(dev)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="300" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-42" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-39" target="IT_VbBreB6Q_WFfWkHAE-41">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-42" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-39" target="IT_VbBreB6Q_WFfWkHAE-41" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="279.99999999999994" y="300.0000000000001" as="sourcePoint" />
             <mxPoint x="308.42" y="318.88" as="targetPoint" />
@@ -124,19 +124,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-44" value="iowrite32(vdev-&amp;gt;features, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_GUEST_FEATURES)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-44" value="iowrite32(vdev-&amp;gt;features, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_GUEST_FEATURES)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1110" y="210" width="430" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-46" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IT_VbBreB6Q_WFfWkHAE-44">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-46" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="IT_VbBreB6Q_WFfWkHAE-44" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1060" y="225" as="sourcePoint" />
             <mxPoint x="1370" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-48" value="drv-&amp;gt;probe(dev)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-48" value="drv-&amp;gt;probe(dev)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="360" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-49" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-48">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-49" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-10" target="IT_VbBreB6Q_WFfWkHAE-48" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="190" y="350" as="sourcePoint" />
             <mxPoint x="220" y="370" as="targetPoint" />
@@ -145,16 +145,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-50" value="&lt;div&gt;static struct virtio_driver virtio_rng_driver = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .driver.name =&amp;nbsp; KBUILD_MODNAME,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .driver.owner = THIS_MODULE,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .id_table =&amp;nbsp; &amp;nbsp; &amp;nbsp;id_table,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .probe =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtrng_probe,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .remove =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_remove,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .scan =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_scan,&lt;/div&gt;&lt;div&gt;#ifdef CONFIG_PM_SLEEP&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .freeze =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_freeze,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .restore =&amp;nbsp; &amp;nbsp; &amp;nbsp; virtrng_restore,&lt;/div&gt;&lt;div&gt;&lt;span&gt;#endif&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-50" value="&lt;div&gt;static struct virtio_driver virtio_rng_driver = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .driver.name =&amp;nbsp; KBUILD_MODNAME,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .driver.owner = THIS_MODULE,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .id_table =&amp;nbsp; &amp;nbsp; &amp;nbsp;id_table,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .probe =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtrng_probe,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .remove =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_remove,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .scan =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_scan,&lt;/div&gt;&lt;div&gt;#ifdef CONFIG_PM_SLEEP&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .freeze =&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;virtrng_freeze,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .restore =&amp;nbsp; &amp;nbsp; &amp;nbsp; virtrng_restore,&lt;/div&gt;&lt;div&gt;&lt;span&gt;#endif&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;};&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="667.5" y="330" width="250" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-51" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-51" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="600" y="340" width="35" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-52" value="virtrng_probe[drivers/char/hw_random/virtio-rng.c]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-52" value="virtrng_probe[drivers/char/hw_random/virtio-rng.c]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="400" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-53" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.322;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-48" target="IT_VbBreB6Q_WFfWkHAE-52">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-53" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.322;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-48" target="IT_VbBreB6Q_WFfWkHAE-52" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="280.0000000000001" y="402.48" as="sourcePoint" />
             <mxPoint x="310" y="427.48" as="targetPoint" />
@@ -163,10 +163,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-54" value="probe_common" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-54" value="probe_common" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="365" y="440" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-55" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.087;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-52" target="IT_VbBreB6Q_WFfWkHAE-54">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-55" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.087;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-52" target="IT_VbBreB6Q_WFfWkHAE-54" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="319.3300000000001" y="440" as="sourcePoint" />
             <mxPoint x="350.69" y="464.73" as="targetPoint" />
@@ -175,16 +175,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-56" value="struct virtrng_info vi = kzalloc(sizeof(struct virtrng_info), GFP_KERNEL);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-56" value="struct virtrng_info vi = kzalloc(sizeof(struct virtrng_info), GFP_KERNEL);" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="510" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-58" value="&lt;div&gt;vi-&amp;gt;hwrng = (struct hwrng) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .read = virtio_read,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .cleanup = virtio_cleanup,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .priv = (unsigned long)vi,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .name = vi-&amp;gt;name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .quality = 1000,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-58" value="&lt;div&gt;vi-&amp;gt;hwrng = (struct hwrng) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .read = virtio_read,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .cleanup = virtio_cleanup,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .priv = (unsigned long)vi,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .name = vi-&amp;gt;name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; .quality = 1000,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="410" y="560" width="220" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-60" value="vi-&amp;gt;vq = virtio_find_single_vq(vdev, random_recv_done, &quot;input&quot;)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-60" value="vi-&amp;gt;vq = virtio_find_single_vq(vdev, random_recv_done, &quot;input&quot;)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="680" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-62" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.158;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-62" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.158;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380.80000000000007" y="470.27" as="sourcePoint" />
             <mxPoint x="410" y="525" as="targetPoint" />
@@ -193,7 +193,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-63" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;exitX=0.158;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-54" target="IT_VbBreB6Q_WFfWkHAE-58">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-63" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;exitX=0.158;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-54" target="IT_VbBreB6Q_WFfWkHAE-58" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="370" y="560" as="sourcePoint" />
             <mxPoint x="399.2" y="614.73" as="targetPoint" />
@@ -202,7 +202,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-64" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.158;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-54" target="IT_VbBreB6Q_WFfWkHAE-60">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-64" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.158;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-54" target="IT_VbBreB6Q_WFfWkHAE-60" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380" y="470" as="sourcePoint" />
             <mxPoint x="379.2" y="694.73" as="targetPoint" />
@@ -212,10 +212,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-65" value="vdev-&amp;gt;config-&amp;gt;find_vqs(vdev, 1, &amp;amp;vq, callbacks, names, NULL,NULL);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-65" value="vdev-&amp;gt;config-&amp;gt;find_vqs(vdev, 1, &amp;amp;vq, callbacks, names, NULL,NULL);" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="730" width="380" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-66" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-60" target="IT_VbBreB6Q_WFfWkHAE-65">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-66" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-60" target="IT_VbBreB6Q_WFfWkHAE-65" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="445.4000000000002" y="715.2699999999999" as="sourcePoint" />
             <mxPoint x="474.6" y="770" as="targetPoint" />
@@ -224,10 +224,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-67" value="vp_find_vqs[drivers/virtio/virtio_pci_common.c]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-67" value="vp_find_vqs[drivers/virtio/virtio_pci_common.c]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="770" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-68" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-65" target="IT_VbBreB6Q_WFfWkHAE-67">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-68" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-65" target="IT_VbBreB6Q_WFfWkHAE-67" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="480" y="770" as="sourcePoint" />
             <mxPoint x="525" y="805" as="targetPoint" />
@@ -236,13 +236,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-69" value="request_irq(vp_dev-&amp;gt;pci_dev-&amp;gt;irq, vp_interrupt, IRQF_SHARED,dev_name(&amp;amp;vdev-&amp;gt;dev), vp_dev)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-69" value="request_irq(vp_dev-&amp;gt;pci_dev-&amp;gt;irq, vp_interrupt, IRQF_SHARED,dev_name(&amp;amp;vdev-&amp;gt;dev), vp_dev)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="810" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-70" value="这里vp_find_vqs有三种方式&lt;br&gt;1）vp_find_vqs_msix(vdev, nvqs, vqs, callbacks, names, true, ctx, desc)&lt;br&gt;2）vp_find_vqs_msix(vdev, nvqs, vqs, callbacks, names, false, ctx, desc)&lt;br&gt;3）vp_find_vqs_intx(vdev, nvqs, vqs, callbacks, names, ctx)" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-70" value="这里vp_find_vqs有三种方式&lt;br&gt;1）vp_find_vqs_msix(vdev, nvqs, vqs, callbacks, names, true, ctx, desc)&lt;br&gt;2）vp_find_vqs_msix(vdev, nvqs, vqs, callbacks, names, false, ctx, desc)&lt;br&gt;3）vp_find_vqs_intx(vdev, nvqs, vqs, callbacks, names, ctx)" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="890" y="720" width="410" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-71" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-67" target="IT_VbBreB6Q_WFfWkHAE-69">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-71" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-67" target="IT_VbBreB6Q_WFfWkHAE-69" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590" y="810" as="sourcePoint" />
             <mxPoint x="620" y="835" as="targetPoint" />
@@ -251,10 +251,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-73" value="vqs[i] = vp_setup_vq(vdev, queue_idx++, callbacks[i], names[i],ctx ? ctx[i] : false,VIRTIO_MSI_NO_VECTOR)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-73" value="vqs[i] = vp_setup_vq(vdev, queue_idx++, callbacks[i], names[i],ctx ? ctx[i] : false,VIRTIO_MSI_NO_VECTOR)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="690" y="860" width="440" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-77" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.079;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-69" target="IT_VbBreB6Q_WFfWkHAE-73">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-77" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.079;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-69" target="IT_VbBreB6Q_WFfWkHAE-73" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="635" y="870" as="sourcePoint" />
             <mxPoint x="675" y="900" as="targetPoint" />
@@ -263,10 +263,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-78" value="vp_dev-&amp;gt;setup_vq(vp_dev, info, index, callback, name, ctx,msix_vec)[drivers/virtio/virtio_pci_legacy.c]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-78" value="vp_dev-&amp;gt;setup_vq(vp_dev, info, index, callback, name, ctx,msix_vec)[drivers/virtio/virtio_pci_legacy.c]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="740" y="920" width="430" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-79" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.063;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-73" target="IT_VbBreB6Q_WFfWkHAE-78">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-79" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.063;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-73" target="IT_VbBreB6Q_WFfWkHAE-78" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="651.0800000000002" y="940" as="sourcePoint" />
             <mxPoint x="688.96" y="970.04" as="targetPoint" />
@@ -275,10 +275,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-80" value="iowrite16(index, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_SEL)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-80" value="iowrite16(index, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_SEL)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="960" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-81" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.097;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-80">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-81" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.097;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-80" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770.0400000000001" y="957.4399999999998" as="sourcePoint" />
             <mxPoint x="792.32" y="992.56" as="targetPoint" />
@@ -287,10 +287,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-82" value="vq = vring_create_virtqueue(index, num,VIRTIO_PCI_VRING_ALIGN, &amp;amp;vp_dev-&amp;gt;vdev,true, false, ctx,vp_notify, callback, name);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-82" value="vq = vring_create_virtqueue(index, num,VIRTIO_PCI_VRING_ALIGN, &amp;amp;vp_dev-&amp;gt;vdev,true, false, ctx,vp_notify, callback, name);" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1000" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-84" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0.002;entryY=0.582;entryDx=0;entryDy=0;exitX=0.097;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-82">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-84" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0.002;entryY=0.582;entryDx=0;entryDy=0;exitX=0.097;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-82" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="769.9999999999999" y="974.79" as="sourcePoint" />
             <mxPoint x="808.29" y="1000" as="targetPoint" />
@@ -300,13 +300,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-85" value="iowrite32(q_pfn, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_PFN)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-85" value="iowrite32(q_pfn, vp_dev-&amp;gt;ioaddr + VIRTIO_PCI_QUEUE_PFN)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1180" width="340" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-86" value="vring_create_virtqueue_packed/split" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-86" value="vring_create_virtqueue_packed/split" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="905" y="1060" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-87" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-82" target="IT_VbBreB6Q_WFfWkHAE-86">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-87" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IT_VbBreB6Q_WFfWkHAE-82" target="IT_VbBreB6Q_WFfWkHAE-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="831.71" y="1060" as="sourcePoint" />
             <mxPoint x="870" y="1085.21" as="targetPoint" />
@@ -315,8 +315,17 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IT_VbBreB6Q_WFfWkHAE-88" value="vring_alloc_queue(vdev, ring_size_in_bytes,&amp;amp;ring_dma_addr," style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IT_VbBreB6Q_WFfWkHAE-88" value="vring_alloc_queue(vdev, ring_size_in_bytes,&amp;amp;ring_dma_addr," style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="980" y="1110" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ssZscoGba2WHQNgsFpol-2" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.097;exitY=1.003;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IT_VbBreB6Q_WFfWkHAE-78" target="IT_VbBreB6Q_WFfWkHAE-85">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="791.71" y="959.7900000000001" as="sourcePoint" />
+            <mxPoint x="830" y="985" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="782" y="1200" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
