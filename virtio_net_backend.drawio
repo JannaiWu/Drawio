@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-11T09:05:17.269Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="RA8BqdO9uGGlU2YBLYAu" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-11T09:09:16.875Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="co9tLPHy9qmQlXWGxOZ6" version="16.2.4" type="github">
   <diagram id="KWUQa78Vd3lR5urpS75q" name="第 1 页">
-    <mxGraphModel dx="593" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="865" dy="1652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,6 +40,42 @@
             <mxPoint x="490" y="130" as="targetPoint" />
             <Array as="points">
               <mxPoint x="95" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-13" value="do pthread relative operation" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="260" as="sourcePoint" />
+            <mxPoint x="230" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="95" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-15" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].notify = virtio_net_ping_rxq;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].notify = virtio_net_ping_txq;&lt;/div&gt;&lt;div&gt;#ifdef notyet&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].notify = virtio_net_ping_ctlq;&lt;/div&gt;&lt;div&gt;#endif&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="410" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="110" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="95" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-17" value="virtio_net_tap_setup(net, devname)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="450" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="80" as="sourcePoint" />
+            <mxPoint x="70" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="95" y="465" />
             </Array>
           </mxGeometry>
         </mxCell>
