@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2022-01-11T09:17:31.270Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="DZQ0kcF6uZA01-7a22gM" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T06:54:30.296Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="6boKdl9eQT9F39N2MbxR" version="16.2.4" type="github">
   <diagram id="KWUQa78Vd3lR5urpS75q" name="第 1 页">
-    <mxGraphModel dx="483" dy="1438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1483" dy="2060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-2" value="virtio_net_init" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-2" value="virtio_net_init" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="40" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-3" value="virtio_linkup(&amp;amp;net-&amp;gt;base, &amp;amp;virtio_net_ops, net, dev, net-&amp;gt;queues,net-&amp;gt;use_vhost ? BACKEND_VHOST : BACKEND_VBSU)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-3" value="virtio_linkup(&amp;amp;net-&amp;gt;base, &amp;amp;virtio_net_ops, net, dev, net-&amp;gt;queues,net-&amp;gt;use_vhost ? BACKEND_VHOST : BACKEND_VBSU)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="242.5" width="400" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-6" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-3">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-6" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="50" y="150" as="sourcePoint" />
             <mxPoint x="100" y="100" as="targetPoint" />
@@ -19,22 +19,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-7" value="&lt;div&gt;static struct virtio_ops virtio_net_ops = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;vtnet&quot;,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* our name */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VIRTIO_NET_MAXQ - 1,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* we currently support 2 virtqueues */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; sizeof(struct virtio_net_config), /* config reg size */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_reset,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* reset */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; NULL,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* device-wide qnotify -- not used */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_cfgread,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* read PCI config */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_cfgwrite,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* write PCI config */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_neg_features,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* apply negotiated features */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_set_status,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* called on guest set status */&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-7" value="&lt;div&gt;static struct virtio_ops virtio_net_ops = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;vtnet&quot;,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* our name */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VIRTIO_NET_MAXQ - 1,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* we currently support 2 virtqueues */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; sizeof(struct virtio_net_config), /* config reg size */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_reset,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* reset */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; NULL,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* device-wide qnotify -- not used */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_cfgread,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* read PCI config */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_cfgwrite,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* write PCI config */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_neg_features,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* apply negotiated features */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; virtio_net_set_status,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* called on guest set status */&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="630" y="180" width="410" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="580" y="192.5" width="30" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-9" value="&lt;div&gt;struct virtio_net {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_base base;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_vq_info queues[VIRTIO_NET_MAXQ - 1];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct mevent&amp;nbsp; &amp;nbsp;*mevp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tapfd;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_ready;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volatile int&amp;nbsp; &amp;nbsp; resetting;&amp;nbsp; &amp;nbsp; &amp;nbsp; /* set and checked outside lock */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volatile int&amp;nbsp; &amp;nbsp; closing;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* stop the tx i/o thread */&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; uint64_t&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; features;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* negotiated features */&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_net_config config;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t rx_mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_in_progress;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_vhdrlen;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_merge;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* merged rx bufs in use */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_t&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tx_tid;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t tx_mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_cond_t&amp;nbsp; tx_cond;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tx_in_progress;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; void (*virtio_net_rx)(struct virtio_net *net);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; void (*virtio_net_tx)(struct virtio_net *net, struct iovec *iov,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;int iovcnt, int len);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct vhost_net *vhost_net;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; bool&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; use_vhost;&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-9" value="&lt;div&gt;struct virtio_net {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_base base;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_vq_info queues[VIRTIO_NET_MAXQ - 1];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct mevent&amp;nbsp; &amp;nbsp;*mevp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tapfd;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_ready;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volatile int&amp;nbsp; &amp;nbsp; resetting;&amp;nbsp; &amp;nbsp; &amp;nbsp; /* set and checked outside lock */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volatile int&amp;nbsp; &amp;nbsp; closing;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* stop the tx i/o thread */&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; uint64_t&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; features;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* negotiated features */&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct virtio_net_config config;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t rx_mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_in_progress;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_vhdrlen;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;rx_merge;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;/* merged rx bufs in use */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_t&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tx_tid;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_mutex_t tx_mtx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pthread_cond_t&amp;nbsp; tx_cond;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;tx_in_progress;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; void (*virtio_net_rx)(struct virtio_net *net);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; void (*virtio_net_tx)(struct virtio_net *net, struct iovec *iov,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;int iovcnt, int len);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; struct vhost_net *vhost_net;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; bool&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; use_vhost;&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="250" y="-415" width="350" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="-400" width="20" height="450" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-11" value="net = calloc(1, sizeof(struct virtio_net))" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-11" value="net = calloc(1, sizeof(struct virtio_net))" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="110" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-11">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="125" as="sourcePoint" />
             <mxPoint x="490" y="130" as="targetPoint" />
@@ -43,10 +43,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-13" value="do pthread relative operation" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-13" value="do pthread relative operation" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="170" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-13">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="180" y="260" as="sourcePoint" />
             <mxPoint x="230" y="210" as="targetPoint" />
@@ -55,10 +55,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-15" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].notify = virtio_net_ping_rxq;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].notify = virtio_net_ping_txq;&lt;/div&gt;&lt;div&gt;#ifdef notyet&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].notify = virtio_net_ping_ctlq;&lt;/div&gt;&lt;div&gt;#endif&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-15" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_RXQ].notify = virtio_net_ping_rxq;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_TXQ].notify = virtio_net_ping_txq;&lt;/div&gt;&lt;div&gt;#ifdef notyet&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].qsize = VIRTIO_NET_RINGSZ;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; net-&amp;gt;queues[VIRTIO_NET_CTLQ].notify = virtio_net_ping_ctlq;&lt;/div&gt;&lt;div&gt;#endif&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="140" y="290" width="410" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-15">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-15" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="100" as="sourcePoint" />
             <mxPoint x="110" y="330" as="targetPoint" />
@@ -67,10 +67,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-17" value="virtio_net_tap_setup(net, devname)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-17" value="virtio_net_tap_setup(net, devname)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="450" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-17">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-17" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="80" as="sourcePoint" />
             <mxPoint x="70" y="390" as="targetPoint" />
@@ -79,10 +79,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-19" value="net-&amp;gt;virtio_net_rx = virtio_net_tap_rx;&lt;br&gt;net-&amp;gt;virtio_net_tx = virtio_net_tap_tx;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-19" value="net-&amp;gt;virtio_net_rx = virtio_net_tap_rx;&lt;br&gt;net-&amp;gt;virtio_net_tx = virtio_net_tap_tx;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="510" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-19">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-19" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="550" as="sourcePoint" />
             <mxPoint x="160" y="500" as="targetPoint" />
@@ -91,10 +91,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-21" value="net-&amp;gt;tapfd = virtio_net_tap_open(tbuf)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-21" value="net-&amp;gt;tapfd = virtio_net_tap_open(tbuf)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="570" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-21">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-21" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="200" y="550" as="sourcePoint" />
             <mxPoint x="250" y="500" as="targetPoint" />
@@ -103,13 +103,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-24" value="tunfd = open(tbuf, O_RDWR);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-24" value="tunfd = open(tbuf, O_RDWR);" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="620" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-25" value="ioctl(tunfd, TUNSETIFF, (void *)&amp;amp;ifr);" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-25" value="ioctl(tunfd, TUNSETIFF, (void *)&amp;amp;ifr);" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="340" y="670" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-21" target="0QqFH8Gw2swg9hfUQbTv-24">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-21" target="0QqFH8Gw2swg9hfUQbTv-24" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="225" y="690" as="sourcePoint" />
             <mxPoint x="275" y="640" as="targetPoint" />
@@ -118,7 +118,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-21" target="0QqFH8Gw2swg9hfUQbTv-25">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-21" target="0QqFH8Gw2swg9hfUQbTv-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="450" y="600" as="sourcePoint" />
             <mxPoint x="500" y="550" as="targetPoint" />
@@ -127,10 +127,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-28" value="ioctl(net-&amp;gt;tapfd, FIONBIO, &amp;amp;opt)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-28" value="ioctl(net-&amp;gt;tapfd, FIONBIO, &amp;amp;opt)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="250" y="730" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-28">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-17" target="0QqFH8Gw2swg9hfUQbTv-28" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="150" y="780" as="sourcePoint" />
             <mxPoint x="200" y="730" as="targetPoint" />
@@ -139,10 +139,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-30" value="virtio_interrupt_init(&amp;amp;net-&amp;gt;base, virtio_uses_msix())" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-30" value="virtio_interrupt_init(&amp;amp;net-&amp;gt;base, virtio_uses_msix())" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="810" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-30">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-30" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="50" y="840" as="sourcePoint" />
             <mxPoint x="100" y="790" as="targetPoint" />
@@ -151,10 +151,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-32" value="pthread_create(&amp;amp;net-&amp;gt;tx_tid, NULL, virtio_net_tx_thread,(void *)net);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-32" value="pthread_create(&amp;amp;net-&amp;gt;tx_tid, NULL, virtio_net_tx_thread,(void *)net);" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="890" width="390" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0QqFH8Gw2swg9hfUQbTv-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-32">
+        <mxCell id="0QqFH8Gw2swg9hfUQbTv-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0QqFH8Gw2swg9hfUQbTv-2" target="0QqFH8Gw2swg9hfUQbTv-32" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="960" as="sourcePoint" />
             <mxPoint x="110" y="910" as="targetPoint" />
