@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T08:12:06.316Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="pka0HgNlG0eGHEe-cBP1" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T08:13:03.910Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="ZoF1nwi-UqqtQjpTl4v8" version="16.2.4" type="github">
   <diagram id="KWUQa78Vd3lR5urpS75q" name="第 1 页">
     <mxGraphModel dx="1483" dy="2060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -164,142 +164,142 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-1" value="virtnet_probe" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="400" width="110" height="30" as="geometry" />
+          <mxGeometry x="1200" y="230" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-2" value="virtio_net_driver_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="210" width="130" height="30" as="geometry" />
+          <mxGeometry x="1120" y="40" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-3" value="register_virtio_driver(&amp;amp;virtio_net_driver)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="260" width="230" height="40" as="geometry" />
+          <mxGeometry x="1200" y="90" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-2" target="46-HXXY4aSdP1pMZ3lFQ-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1120" y="400" as="sourcePoint" />
-            <mxPoint x="1170" y="350" as="targetPoint" />
+            <mxPoint x="1100" y="230" as="sourcePoint" />
+            <mxPoint x="1150" y="180" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1173" y="280" />
+              <mxPoint x="1153" y="110" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-5" value="将virtio net driver注册到virtio bus上，bus匹配上会调用设备自身的probe函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="310" width="420" height="20" as="geometry" />
+          <mxGeometry x="1200" y="140" width="420" height="20" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-6" value="virtio_has_feature(...)&lt;br&gt;..." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="450" width="150" height="40" as="geometry" />
+          <mxGeometry x="1280" y="280" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-7" value="检查各种feature并进行配置" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1470" y="460" width="160" height="20" as="geometry" />
+          <mxGeometry x="1450" y="290" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-8" value="virtio_dev_probe" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="340" width="110" height="30" as="geometry" />
+          <mxGeometry x="1120" y="170" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-8" target="46-HXXY4aSdP1pMZ3lFQ-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1130" y="480" as="sourcePoint" />
-            <mxPoint x="1180" y="430" as="targetPoint" />
+            <mxPoint x="1110" y="310" as="sourcePoint" />
+            <mxPoint x="1160" y="260" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1168" y="415" />
+              <mxPoint x="1148" y="245" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-1" target="46-HXXY4aSdP1pMZ3lFQ-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1110" y="520" as="sourcePoint" />
-            <mxPoint x="1160" y="470" as="targetPoint" />
+            <mxPoint x="1090" y="350" as="sourcePoint" />
+            <mxPoint x="1140" y="300" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1248" y="470" />
+              <mxPoint x="1228" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-13" value="init_vqs(vi);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="520" width="90" height="40" as="geometry" />
+          <mxGeometry x="1280" y="350" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-1" target="46-HXXY4aSdP1pMZ3lFQ-13">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1140" y="560" as="sourcePoint" />
-            <mxPoint x="1190" y="510" as="targetPoint" />
+            <mxPoint x="1120" y="390" as="sourcePoint" />
+            <mxPoint x="1170" y="340" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1248" y="540" />
+              <mxPoint x="1228" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-17" value="Allocate/initialize the rx/tx queues, and invoke find_vqs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1390" y="530" width="310" height="20" as="geometry" />
+          <mxGeometry x="1370" y="360" width="310" height="20" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-18" value="virtnet_alloc_queues(vi)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1355" y="585" width="150" height="30" as="geometry" />
+          <mxGeometry x="1335" y="415" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-13" target="46-HXXY4aSdP1pMZ3lFQ-18">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1220" y="680" as="sourcePoint" />
-            <mxPoint x="1270" y="630" as="targetPoint" />
+            <mxPoint x="1200" y="510" as="sourcePoint" />
+            <mxPoint x="1250" y="460" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1323" y="600" />
+              <mxPoint x="1303" y="430" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-20" value="virtnet_find_vqs" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="640" width="110" height="30" as="geometry" />
+          <mxGeometry x="1410" y="470" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-18" target="46-HXXY4aSdP1pMZ3lFQ-20">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1340" y="700" as="sourcePoint" />
-            <mxPoint x="1390" y="650" as="targetPoint" />
+            <mxPoint x="1320" y="530" as="sourcePoint" />
+            <mxPoint x="1370" y="480" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1393" y="655" />
+              <mxPoint x="1373" y="485" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-22" value="virtio_find_vqs_ctx(vi-&amp;gt;vdev, total_vqs, vqs, callbacks,names, ctx, NULL);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1505" y="700" width="400" height="40" as="geometry" />
+          <mxGeometry x="1485" y="530" width="400" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-20" target="46-HXXY4aSdP1pMZ3lFQ-22">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1360" y="750" as="sourcePoint" />
-            <mxPoint x="1410" y="700" as="targetPoint" />
+            <mxPoint x="1340" y="580" as="sourcePoint" />
+            <mxPoint x="1390" y="530" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1458" y="720" />
+              <mxPoint x="1438" y="550" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-24" value="vdev-&amp;gt;config-&amp;gt;find_vqs&lt;br&gt;（including pci mmio...）" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1654" y="760" width="170" height="40" as="geometry" />
+          <mxGeometry x="1634" y="590" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-22" target="46-HXXY4aSdP1pMZ3lFQ-24">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1470" y="810" as="sourcePoint" />
-            <mxPoint x="1520" y="760" as="targetPoint" />
+            <mxPoint x="1450" y="640" as="sourcePoint" />
+            <mxPoint x="1500" y="590" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1605" y="780" />
+              <mxPoint x="1585" y="610" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-26" value="virtio_device_ready(vdev);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="810" width="170" height="40" as="geometry" />
+          <mxGeometry x="1280" y="640" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-1" target="46-HXXY4aSdP1pMZ3lFQ-26">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1190" y="800" as="sourcePoint" />
-            <mxPoint x="1240" y="750" as="targetPoint" />
+            <mxPoint x="1170" y="630" as="sourcePoint" />
+            <mxPoint x="1220" y="580" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1248" y="830" />
+              <mxPoint x="1228" y="660" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-28" value="virtnet_set_queues(vi, vi-&amp;gt;curr_queue_pairs)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="880" width="250" height="40" as="geometry" />
+          <mxGeometry x="1280" y="710" width="250" height="40" as="geometry" />
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="46-HXXY4aSdP1pMZ3lFQ-1" target="46-HXXY4aSdP1pMZ3lFQ-28">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1180" y="760" as="sourcePoint" />
-            <mxPoint x="1230" y="710" as="targetPoint" />
+            <mxPoint x="1160" y="590" as="sourcePoint" />
+            <mxPoint x="1210" y="540" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1248" y="900" />
+              <mxPoint x="1228" y="730" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="46-HXXY4aSdP1pMZ3lFQ-30" value="设置vitioqueue并申请中断" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1840" y="770" width="150" height="20" as="geometry" />
+          <mxGeometry x="1820" y="600" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
